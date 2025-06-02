@@ -198,6 +198,10 @@ flex-wrap: wrap;/*追加*/
     /*height: auto;*/
   }
 
+  .modal-content {
+    z-index: 10000 !important;
+  }
+
   #openModal {
     width: auto;
     max-width: 100%;        /* 親要素の幅を超えない */
