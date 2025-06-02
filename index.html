@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Collection</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+      <style>
+        
+      </style>
+    
+</head>
+<body>
+    <header>
+        <div class="header-inner">   
+     <img src="img/logo.png" alt="スニーカーコレクション" class="logo">
+     <button id="openModal">Data Entry</button>
+     </div>
+    </header>
+    <!-- メインビジュアル（スライダー） -->
+   <div class="slider">
+    <div class="slides">
+      <img src="img/mv_1.png" alt="mv1">
+      <img src="img/mv_2.png" alt="mv2">
+      <img src="img/mv_3.png" alt="mv3">
+    </div>
+   </div>
+
+  <!-- モーダル -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <form id="sneakerForm">
+        <label>Model：<input type="text" id="model" required></label>
+        <label>Releas date：<input type="date" id="releaseDate" required></label>
+        <label>Retail Price：<input type="number" id="retailPrice" required></label>
+        <label>Week1：<input type="number" id="week1" required></label>
+        <label>Week2：<input type="number" id="week2" required></label>
+        <label>Week3：<input type="number" id="week3" required></label>
+        <label>Week4：<input type="number" id="week4" required></label>
+        <button type="submit">SAVE</button>
+        <button type="button" id="closeModal">CLOSE</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 表示エリア -->
+<div id="dataArea" style="display: flex; justify-content: space-between; margin-top: 30px;">      
+    <!-- 左：入力データ -->
+    <div id="output" style="width: 595px;"></div>
+
+    <!-- 右：グラフ -->
+    <div id="graphArea">
+        <canvas id="priceChart" width="600" height="400"></canvas>
+      </div>
+  </div>
+  <div id="gameContainer">
+    <h2>Catch the Sneaker Box!</h2>
+    <p>Score: <span id="score">0</span> | High Score: <span id="highScore">0</span> | Blue:-20 | BlkRed:10 | Gold:50</p>
+    <button id="startGame">Start Game</button>
+    <button id="resetStorage">Reset High Score</button>
+    <p></p>
+    <div id="game"></div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/data.js"></script>
+   <!-- ミニゲーム用のJS -->
+   <script src="js/game.js"></script>
+</body>
+</html>
