@@ -342,3 +342,6 @@ body {
 .box.rare {
   background-image: url('../img/box_rare.png');
 }
+appearance: button;
+-webkit-appearance: button;
+-moz-appearance: button;
