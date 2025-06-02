@@ -115,6 +115,7 @@ object-fit: cover;
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.6);
+    overflow-y: auto; /* ← モーダルが画面より大きくなった時のスクロールを許可 */
   }
   .modal-content {
     position: absolute;
@@ -128,6 +129,8 @@ object-fit: cover;
     width :90%;
     max-width: 300px;
     box-sizing: border-box;
+    max-height: 90vh; /* スマホ実機での高さ超過対策 */
+  　overflow-y: auto; /* モーダル内部もスクロール可能に */  
   }
   label {
     display: block;
