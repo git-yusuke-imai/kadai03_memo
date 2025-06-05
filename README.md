@@ -5,7 +5,7 @@ SNKER Collection App
 - スニーカーのデータメモアプリ＆ミニゲーム
 
 ## ③アプリのデプロイURL
-デプロイしている場合はURLを記入（任意）
+https://git-yusuke-imai.github.io/kadai03_memo/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 - ID: なし
